@@ -40,6 +40,15 @@ function render_template_str(str, context, callback){
 }
 
 
+// without callback, without try/catch
+function return_renderred(str, context){
+    if(!str) throw Error('template get no text, gg-util, return renderred');
+
+    var template = handlebars.compile(str);
+    return template(context);
+}
+
+
 // add underscore template , no tested.
 
 function u_render_str(str, context, callback){
@@ -65,6 +74,7 @@ function u_render_file(abs_template_path, context, callback){
 
 module.exports.render_template     = render_template;
 module.exports.render_template_str = render_template_str;
+module.exports.return_renderred    = return_renderred;
 
 module.exports.u_render_str  = u_render_str;
 module.exports.u_render_file = u_render_file;
