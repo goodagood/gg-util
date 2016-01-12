@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/goodagood/gg-util/issues"
   },
-  "homepage": "https://github.com/goodagood/gg-util#readme"
+  "homepage": "https://github.com/goodagood/gg-util#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {}
 }
