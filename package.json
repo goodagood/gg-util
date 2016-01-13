@@ -1,6 +1,6 @@
 {
   "name": "gg-util",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "general utils",
   "main": "index.js",
   "scripts": {
